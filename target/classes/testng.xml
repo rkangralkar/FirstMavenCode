@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="PHPTravels Automation Testing" verbose="1">
+
+	<listeners>
+		<listener class-name="com.qa.reportListener.ExtentReporterNG" />
+	</listeners>
+	
+		<test name="PHP Travels Test">
+			<classes>
+				<class name="com.qa.tests.LoginPageTest" />
+				<class name="com.qa.tests.MyAccountPageTest" />
+				<class name="com.qa.tests.MyProfilePageTest" />
+			</classes>
+		</test>
+</suite>

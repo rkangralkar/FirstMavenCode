@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.tests.MyProfilePageTest">
+        <methods>
+          <include name="verifyFirstName"/>
+          <include name="setUp"/>
+          <include name="verifyPhoneNumber"/>
+          <include name="tearDown"/>
+          <include name="verifyLastName"/>
+        </methods>
+      </class> <!-- com.qa.tests.MyProfilePageTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.qa.tests.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyValidLogin"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="5" name="IETest(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="com.qa.tests.MyAccountPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyMyAccountPageTtile"/>
+          <include name="setUp"/>
+          <include name="verifyUserImage"/>
+          <include name="verifyCorrectUserName"/>
+        </methods>
+      </class> <!-- com.qa.tests.MyAccountPageTest -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

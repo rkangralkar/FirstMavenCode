@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PHPTravels Automation Testing]">
+  <listeners>
+    <listener class-name="com.qa.reportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="PHP Travels Test(failed)">
+    <classes>
+      <class name="com.qa.tests.MyProfilePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyPhoneNumber"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.tests.MyProfilePageTest -->
+      <class name="com.qa.tests.MyAccountPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyUserImage"/>
+        </methods>
+      </class> <!-- com.qa.tests.MyAccountPageTest -->
+    </classes>
+  </test> <!-- PHP Travels Test(failed) -->
+</suite> <!-- Failed suite [PHPTravels Automation Testing] -->
